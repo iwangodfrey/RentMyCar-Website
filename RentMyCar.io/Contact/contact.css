@@ -1,0 +1,262 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(255, 255, 255, 0.274);
+      background-image: linear-gradient(to right, #707070de, #36363607);
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.404);
+      background-image: linear-gradient(to right, #363636de, #36363648);
+    }
+    
+    .header-logo{
+      align-content: space-between;
+      display: flex;
+    }
+  
+    .header-logo h1{
+      font-size: 40px;
+      color: rgb(167, 185, 1);
+      margin: 0;
+      padding-left: 5px;
+    }
+    .right-section {
+      display: flex;
+      align-items: center;
+    }
+    
+    .login-btn,
+    .register-btn {
+      background-color: rgb(167, 185, 1);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+      outline: none;
+      list-style: none;
+      text-decoration: none;
+    }
+  
+    .login-btn a:visited,
+    .register-btn a:visited{
+      color: white;
+      text-decoration: none;
+    }  
+    
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: transparent;
+    outline: 1px solid rgb(167, 185, 1);
+    color: white !important;
+    text-decoration: underline;
+    }
+    
+    nav {
+      display: flex;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    nav a {
+      color: rgb(167, 185, 1);
+      text-decoration: none;
+      padding: 0 10px;
+    }
+    
+    nav a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 100px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .contact1{
+      flex-basis: 45%;
+      border-radius: 5px;
+      margin-bottom: 5%;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      border: 3px solid #000000;
+      background-color: rgba(0, 0, 0, 0.404);
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 20px;
+    }
+
+    .contact1 label{
+      display: block;
+      margin-top: 10px;
+    }
+
+    .contact1 input, form textarea{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+
+    form textarea{
+      height: 150px;
+    }
+
+    
+    .col-submit button{
+      display: block;
+      width: 40%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: rgb(1, 105, 1);
+      color: white;
+      cursor: pointer;
+      border: 1px solid white;
+      font-family: arial, sans-serif;
+      transition: 1s;
+      
+    }
+    
+    .col-submit button:hover{
+      background-color: green;
+      transition: 1s;
+    }
+
+
+.contact1 h3 {
+  margin-top: 0;
+}
+
+.contact2{
+  flex-basis: 45%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  background-color: rgba(0, 0, 0, 0.404);
+  flex-basis: 45%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  background-color: rgba(0, 0, 0, 0.404);
+  margin-right:10%;
+  margin-top: 20px;
+}
+
+.contact2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact2 li {
+  margin-bottom: 10px;
+}
+
+.contact2 li strong {
+  display: inline-block;
+  width: 100px;
+}
+
+.contact2 h3{
+  margin-top: 0;
+}
+
+
+
+    
+    .footer {
+      margin-top: 150px;
+      width: 100%;
+      padding: 100px 15%;
+      background: #333;
+      color: #efefef;
+      display: flex;
+    }
+    
+    .footer div{
+      text-align: center;
+    }
+    
+    .footer div{
+      text-align: center;
+    }
+    
+    .col-2{
+      flex-grow: 2;
+    }
+    
+    .footer div h3{
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+    
+    .col-1 a{
+      display: block;
+      text-decoration: none;
+      color: #efefef;
+      margin-bottom: 10px;
+    }
+    
+    form input{
+      width: 400px;
+      height: 45px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      outline: none;
+      border: none;
+    }
+    
+    form button{
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    .social-icons{
+      margin-top: 30px;
+    }
+    
+    .social-icons i{
+     font-size: 22px;
+     margin: 10px;
+     cursor: pointer;
+    }
+
+    .contact3 iframe{
+      height: 300px;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    

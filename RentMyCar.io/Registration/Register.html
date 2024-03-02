@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Registration/Register.css">
+    <script src="https://kit.fontawesome.com/0b0d1d0a68.js" crossorigin="anonymous"></script>
+    <title>RentMyCar.io/HomePage</title>
+</head>
+<body>
+    <div class="header-bg">
+        <header>
+          <div class="header-logo">
+            <img src="/Images/sedan.png" alt="Car Icon" style="height: 50px; margin-right: 5%">
+            <h1 style="margin-right: 2%">RentMyCar.io</h1>
+        </div>
+            <div class="right-section">
+                <nav>
+                    <ul>
+                        <li><a href="/Home/HomePage.html">Home</a></li>
+                        <li><a href="/Services/Services.html">Services</a></li>
+                        <li><a href="/Contact/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="login-btn"><a href="/Login/login.html">Login</a></button>
+                <button class="register-btn"><a href="/Registration/Register.html">Register</a></button>
+            </div>
+        </header>
+
+        <!--Coniatiner start-->
+
+        <div id="container">
+
+          <!--Form wrap start-->
+
+          <div class="form-wrap">
+            <h2>Register</h2>
+            <p>It's free and only takes 1 minute!</p>
+
+            <!--Form start-->
+
+            <form>
+              <div class="form-group">
+                <input type="text" name="title" id="title" placeholder="Title*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="first name" id="first-name" placeholder="First Name*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="surname" id="surname" placeholder="Surname*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="gender" id="gender" placeholder="Gender">
+              </div>
+              <div class="form-group">
+                <input type="text" name="address" id="address" placeholder="Address*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="postcode" id="postcode" placeholder="Postcode*" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="telephone" id="telephone" placeholder="Telephone*" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="username" id="username" placeholder="Username*" required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" id="password" placeholder="Password*" required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password*" required>
+              </div>
+              <button type="submit">Register</button>
+              <p>Already registered? click <a href="/Login/login.html">Login</a></p>
+            </form>
+
+            <!--Form close-->
+
+            <!--JScript start-->
+
+            <script>
+              // Get the form and inputs
+              const form = document.querySelector('form');
+              const titleInput = document.querySelector('#title');
+              const firstNameInput = document.querySelector('#first-name');
+              const surnameInput = document.querySelector('#surname');
+              const genderInput = document.querySelector('#gender');
+              const addressInput = document.querySelector('#address');
+              const postcodeInput = document.querySelector('#postcode');
+              const emailInput = document.querySelector('#email');
+              const telephoneInput = document.querySelector('#telephone');
+              const usernameInput = document.querySelector('#username');
+              const passwordInput = document.querySelector('#password');
+              const cpasswordInput = document.querySelector('#cpassword');
+              
+              // Add event listener for form submission
+              form.addEventListener('submit', (event) => {
+                  // Prevent default form submission behavior
+                  event.preventDefault();
+                  
+                  // Get the input values
+                  const titleValue = titleInput.value.trim();
+                  const firstNameValue = firstNameInput.value.trim();
+                  const surnameValue = surnameInput.value.trim();
+                  const genderValue = genderInput.value.trim();
+                  const addressValue = addressInput.value.trim();
+                  const postcodeValue = postcodeInput.value.trim();
+                  const emailValue = emailInput.value.trim();
+                  const telephoneValue = telephoneInput.value.trim();
+                  const usernameValue = usernameInput.value.trim();
+                  const passwordValue = passwordInput.value.trim();
+                  const cpasswordValue = cpasswordInput.value.trim();
+                  
+                  // Check if the required fields are empty
+                  if (titleValue === '' || firstNameValue === '' || surnameValue === '' || addressValue === '' || postcodeValue === '' || emailValue === '' || telephoneValue === '' || usernameValue === '' || passwordValue === '' || cpasswordValue === '') {
+                      alert('Please fill in all required fields.');
+                      return;
+                  }
+                  
+                  // Check if the password and confirm password fields match
+                  if (passwordValue !== cpasswordValue) {
+                      alert('Passwords do not match.');
+                      return;
+                  }
+                  
+                  // Submit the form
+                  form.submit();
+              });
+          </script>
+
+            <!--Jscript end-->
+
+          </div>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="col-1">
+          <h3>Useful Links</h3>
+          <a href="/Home/HomePage.html">Home</a>
+          <a href="/Services/Services.html">Services</a>
+          <a href="/Contact/contact.html">Contact</a>
+      </div>
+      <div class="col-2">
+          <h3>Newsletter</h3>
+          <form>
+              <input type="email" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">Subscribe Now!</button>
+          </form>
+      </div>
+      <div class="col-3">
+          <h3>Contact</h3>
+          <p>Cardiff Metropolitan University <br> LLandaff Campus <br> Western Ave <br> CF5 2YB</p>
+          <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+          </div>
+      </div>
+</body>
+</body>
+</html>

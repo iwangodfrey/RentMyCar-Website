@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Edit_car/Edit_car.css">
+    <title>RentMyCar.io/HomePage</title>
+    <script src="https://kit.fontawesome.com/0b0d1d0a68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-bg">
+        <header>
+            <div class="header-logo">
+                <img src="/Images/sedan.png" alt="Car Icon" style="height: 50px; margin-right: 5%">
+                <h1 style="margin-right: 2%">RentMyCar.io</h1>
+            </div>
+            <div class="page-title">
+                <h2>Edit vehicle</h2>
+            </div>
+            <div class="right-section">
+                <nav>
+                    <ul>
+                        <li><a href="/Dashboard/dashboard.html">Dashboard</a></li>
+                        <li><a href="/view_car/view_car.html">View cars</a></li>
+                        <li><a href="/Edit_car/Edit_car.html">Edit cars</a></li>
+                        <li><a href="/Home/HomePage.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    
+<div class="container" style="justify-content: center;">
+    <div class="container mt-4 create-record-content"> 
+        
+        <hr>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid" alt="Placeholder image">
+            </div>
+            <div class="col-md-6">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+
+                    <div class="form-group">                        
+                        <input type="text" class="form-control" id="txtmake" placeholder="Make" required>
+                    </div>
+
+                    <div class="form-group">                        
+                        <input type="email" class="form-control" id="txtmodel" placeholder="Model" required>
+                    </div>
+
+                    <div class="form-group">                        
+                        <input type="tel" class="form-control" id="txtbodytype" placeholder="Body type" required>
+                    </div>
+
+                    <div class="form-group">                        
+                        <input class="form-control" id="txtfueltype" placeholder="Fuel type" required>
+                    </div>
+
+                    <div class="form-group">                        
+                        <input class="form-control" id="txtmilage" placeholder="Milage" required>
+                    </div>
+
+                    <div class="form-group">                        
+                        <input class="form-control" id="txtlocation" placeholder="Location" required>
+                    </div>
+                    
+                    <div class="form-group">                        
+                        <input class="form-control" id="txtyearOfMan" placeholder="Year of manufacturing" required>
+                    </div>
+                    <div class="form-group">                        
+                        <input class="form-control" id="txtdoors" placeholder="Doors" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="txtimgFile" name="file" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-secondary" style="background-color:rgb(167, 185, 1); color:black;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="col-2">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <br>
+                <button type="submit">Subscribe Now!</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+            <p>Cardiff Metropolitan University <br> LLandaff Campus <br> Western Ave <br> CF5 2YB</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+</body>
+</body>
+</html>
